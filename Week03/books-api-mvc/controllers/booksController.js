@@ -1,9 +1,5 @@
 const Book = require("../models/book");
 
-const importedModule = require("./myModule.js"); // Import a local module
-
-const http = require("http"); // Import a built-in module
-
 const getAllBooks = async (req, res) => {
   try {
     const books = await Book.getAllBooks();
